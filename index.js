@@ -1,5 +1,3 @@
-//test
-
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
@@ -57,7 +55,7 @@ app.use("/comments", commentRoutes);
 // app.use("/", userRoutes);
 
 app.get("/", (req, res) => {
-  res.redirect("https://champselect.obradovic.dev");
+  res.redirect("https://blog.obradovic.dev");
 });
 
 app.listen(5001, () => {
