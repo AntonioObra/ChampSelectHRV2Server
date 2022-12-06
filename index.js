@@ -18,10 +18,13 @@ const dbUrl = process.env.DB_URL;
 const app = express();
 
 //database connection check
-mongoose.connect(dbUrl, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  "mongodb+srv://antonioobra:pTljapr2xnpMfemN@cluster0.oaaqjsd.mongodb.net/?retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => {
