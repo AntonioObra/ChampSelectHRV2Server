@@ -58,7 +58,7 @@ app.use("/comments", commentRoutes);
 // app.use("/", userRoutes);
 
 app.get("/", (req, res) => {
-  res.redirect("https://blog.obradovic.dev");
+  res.redirect("https://champselect.obradovic.dev/");
 });
 
 app.listen(process.env.PORT || 5000, () => {
