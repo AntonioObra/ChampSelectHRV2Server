@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import bodyParser from "body-parser";
-import User from "./models/users.js";
+// import User from "./models/users.js";
 
 import championRoutes from "./routes/champions.js";
 import itemRoutes from "./routes/items.js";
