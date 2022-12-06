@@ -61,6 +61,6 @@ app.get("/", (req, res) => {
   res.redirect("https://blog.obradovic.dev");
 });
 
-app.listen(5001, () => {
-  console.log("Listening on port 5001!");
+app.listen(process.env.PORT || 5000, () => {
+  console.log("Listening on port 5000!");
 });
